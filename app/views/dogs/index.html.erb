@@ -1,0 +1,8 @@
+<h1>hola llegaste al index</h1>
+<ul>
+  <% @dogs.each do |dog| %>
+   <li><%= link_to dog.name, dog_path(dog) %></li>
+
+   <li>Esta es <%= dog.name %> y su raza es : <%= dog.breed %></li>
+   <% end %>
+</ul>
